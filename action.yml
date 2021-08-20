@@ -1,0 +1,13 @@
+name: 'latex-env'
+description: 'latex-env'
+inputs:
+  message:
+    description: 'my message'
+    required: true
+    default: 'hello'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - {% ${{ inputs.message }} %}
