@@ -5,6 +5,14 @@ inputs:
     description: 'my message'
     required: true
     default: 'hello'
+  source:
+    description: 'source script'
+    required: true
+    default: ''
+  entryPoint:
+    description: 'entryPoint'
+    required: true
+    default: ''
 
 runs:
   using: 'docker'
