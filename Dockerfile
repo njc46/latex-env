@@ -1,8 +1,19 @@
-FROM stracquadaniolab/slim-container:latest
+FROM alpine:latest
 
-LABEL org.stracquadaniolab.maintainer="gh-action-latex-env"
-LABEL org.stracquadaniolab.version="0.0.1"
-LABEL org.stracquadaniolab.platform="github-action"
+RUN apk add -U make
+
+# dependencies for texlive
+RUN apk add -U --repository http://dl-3.alpinelinux.org/alpine/edge/main \
+    poppler harfbuzz-icu
+
+# zziplib (found in edge/community repository) is a dependency to texlive-luatex
+RUN apk add -U --repository http://dl-3.alpinelinux.org/alpine/edge/community \
+    zziplib
+
+RUN apk add -U --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+    texlive-full
+
+RUN ln -s /usr/bin/mktexlsr /usr/bin/mktexlsr.pl
 
 ADD ./entrypoint.sh /usr/bin/entrypoint.sh
 

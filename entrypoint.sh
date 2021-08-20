@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# set -e
+set -e
+set +x
 
 MESSAGE=$1
 
 echo $MESSAGE
+echo "This is a message"
