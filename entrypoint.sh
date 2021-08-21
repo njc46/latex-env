@@ -10,7 +10,5 @@ ls -l
 echo "`pwd`"
 
 echo $MESSAGE
-echo $ENTER
 eval $ENTER
-# make build
 ls -l
