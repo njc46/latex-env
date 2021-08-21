@@ -1,0 +1,11 @@
+ 1439  docker tag latex-env:latest njc2/latex-env:latest
+ 1440  docker push njc2/latex-env:latest
+ 1457  history 1 | grep docker | grep njc2
+ 1459  history 1 | grep docker | grep njc2
+ 1460  docker tag latex-env:latest njc2/latex-env:latest
+ 1461  docker push njc2/latex-env:latest
+ 1478  docker tag latex-env:ubu njc2/latex-env:ubu
+ 1479  docker push njc2/latex-env:ubu
+ 1488  docker tag latex-env:ubu njc2/latex-env:ubu
+ 1489  docker push njc2/latex-env:ubu
+ 1504  history 1 | grep docker | grep njc2
