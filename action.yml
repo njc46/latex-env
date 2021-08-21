@@ -9,14 +9,14 @@ inputs:
     description: 'source script'
     required: true
     default: ''
-  entryPoint:
-    description: 'entryPoint'
+  enter:
+    description: 'enter'
     required: true
-    default: ''
+    default: 'echo "hello from echo"'
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.message }}
-    - ${{ inputs.entryPoint }}
+    - ${{ inputs.enter }}

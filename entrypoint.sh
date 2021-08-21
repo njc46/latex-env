@@ -14,5 +14,4 @@ echo $MESSAGE
 # source $SOURCE
 eval $ENTER
 make build
-ls
- 
+ls -l
