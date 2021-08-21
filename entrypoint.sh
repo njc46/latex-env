@@ -13,4 +13,6 @@ echo "`pwd`"
 echo $MESSAGE
 # source $SOURCE
 eval $ENTER
-which pdflatex
+make build
+ls
+ 
