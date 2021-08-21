@@ -7,6 +7,9 @@ MESSAGE=$1
 SOURCE=$2
 ENTER=$3
 
+ls -l
+echo "`pwd`"
+
 echo $MESSAGE
 # source $SOURCE
 eval $ENTER
