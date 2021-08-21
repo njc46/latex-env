@@ -1,4 +1,4 @@
-FROM docker.io/njc2/latex-env:latest 
+FROM docker.io/njc2/latex-env:ubu 
 
 ADD ./entrypoint.sh /usr/bin/entrypoint.sh
 
