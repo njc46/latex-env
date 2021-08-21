@@ -4,14 +4,13 @@ set -e
 set +x
 
 MESSAGE=$1
-SOURCE=$2
-ENTER=$3
+ENTER=$2
 
 ls -l
 echo "`pwd`"
 
 echo $MESSAGE
-# source $SOURCE
+echo $ENTER
 eval $ENTER
-make build
+# make build
 ls -l
