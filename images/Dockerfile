@@ -15,4 +15,7 @@ RUN apk add -U --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
 
 RUN ln -s /usr/bin/mktexlsr /usr/bin/mktexlsr.pl
 
+RUN mktexlsr && updmap -sys && initexmf --admin --mkmaps
+RUN mktexpk --mfmode / --bdpi 600 --mag 0+486/600 --dpi 486 fvmr8r
+
 ENTRYPOINT [ "/bin/sh" ]
