@@ -5,10 +5,6 @@ inputs:
     description: 'my message'
     required: true
     default: 'hello'
-  source:
-    description: 'source script'
-    required: true
-    default: ''
   enter:
     description: 'enter'
     required: true
