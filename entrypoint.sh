@@ -6,7 +6,7 @@ set +x
 MESSAGE=$1
 ENTER=$2
 
-python3 -m pip install latex-dirtree-gen
+python3 -m pip3 install latex-dirtree-gen
 
 ls -l
 echo "`pwd`"
