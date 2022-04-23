@@ -12,6 +12,12 @@ RUN apt-get install gnupg software-properties-common -y \
 RUN apt-get install texlive-latex-extra texlive-latex-base -y \
     && apt-get install texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-humanities -y 
 
+#ENV LC_ALL="en_US.UTF-8"
+#RUN dpkg-reconfigure locales
+
+RUN apt-get install texlive-lang-cyrillic -y
+#RUN apt-get install texlive-full -y
+
 RUN apt-get install -y pdftk
 
 ENTRYPOINT [ "/bin/sh" ]
